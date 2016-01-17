@@ -28,7 +28,8 @@ public class Node {
 	 * child of the current node 
 	 */
 	public void setLeftChild(int data) {
-
+		Node newNode = new Node(data);
+		this.leftChild = newNode;
 	}
 
 	/**
@@ -36,7 +37,7 @@ public class Node {
 	 * @return leftChild the left child of the current node
 	 */
 	public Node getLeftChild() {
-
+		return this.leftChild;
 	}
 
 	/**
@@ -45,7 +46,8 @@ public class Node {
 	 * child of the current node
 	 */
 	public void setRightChild(int data) {
-
+		Node newNode = new Node(data);
+		this.rightChild = newNode;
 	}
 
 	/**
@@ -53,7 +55,7 @@ public class Node {
 	 * @return rightChild the right child of the current node
 	 */
 	public Node getRightChild() {
-
+		return this.rightChild;
 	}
 
 	/**
