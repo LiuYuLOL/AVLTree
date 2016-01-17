@@ -12,7 +12,7 @@ public class Node {
 	private Node rightChild;
 
 	/**
-	 * Constructs a leaf node
+	 * Constructs a leaf node that stores an integer, data
 	 * @param data the integer to set the data value to for the new node
 	 */
 	public Node(int data) {
