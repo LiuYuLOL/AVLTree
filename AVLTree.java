@@ -9,6 +9,22 @@ public class AVLTree {
 	private Node root;
 
 	/**
+	 * Constructs an empty AVL tree.
+	 */
+	public AVLTree() {
+
+	}
+
+	/**
+	 * Constructs an AVL tree by creating a new Node object, newNode, 
+	 * and setting it as the tree's root node.
+	 * @param data the integer to be stored in the AVL tree's root node
+	 */
+	public AVLTree(int data) {
+
+	}
+
+	/**
 	 * Creates a new Node object that contains an integer, data, and 
 	 * inserts it into the AVL tree. 
 	 * @param data integer to be stored in the new Node object
