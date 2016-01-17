@@ -1,7 +1,6 @@
 /**
- * Node for an AVL tree or binary search tree that holds an 
- * integer, data, and pointers to its left and right children, 
- * leftChild and rightChild, respectively. 
+ * Node for an AVL tree that holds an integer, data, and pointers to 
+ * its left and right children, leftChild and rightChild, respectively. 
  * @author Isaac Mast
  */
 public class Node {
