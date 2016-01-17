@@ -42,7 +42,7 @@ public class Node {
 	/**
 	 * Determines the balance factor of the current node. The balance 
 	 * factor is equal to the difference between the height of the 
-	 * left subtree and the right subtree.
+	 * left subtree and the right subtree of the current node.
 	 * @return balanceFactor the balance factor of the current node
 	 */
 	public int getBalanceFactor() {
