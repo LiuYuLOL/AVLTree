@@ -19,6 +19,8 @@ public class AVLTree {
 	 * data.
 	 * @return True if a Node object is found in the AVL tree that 
 	 * contains the integer, data
+	 * @return False if a Node object is not found in the AVL tree 
+	 * that contains the integer, data
 	 */
 	public boolean find(int data) {
 
