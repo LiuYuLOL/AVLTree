@@ -38,4 +38,14 @@ public class Node {
 	public Node getRightChild() {
 
 	}
+
+	/**
+	 * Determines the balance factor of the current node. The balance 
+	 * factor is equal to the difference between the height of the 
+	 * left subtree and the right subtree.
+	 * @return balanceFactor the balance factor of the current node
+	 */
+	public int getBalanceFactor() {
+
+	}
 }
