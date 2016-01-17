@@ -16,7 +16,10 @@ public class Node {
 	 * @param data the integer to set the data value to for the new node
 	 */
 	public Node(int data) {
-
+		this.data = data;
+		balancefactor = 0;
+		leftChild = null;
+		rightChild = null;
 	}
 
 	/**
