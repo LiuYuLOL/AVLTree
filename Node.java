@@ -12,6 +12,14 @@ public class Node {
 	private Node rightChild;
 
 	/**
+	 * Constructs a leaf node
+	 * @param data the integer to set the data value to for the new node
+	 */
+	public Node(int data) {
+
+	}
+
+	/**
 	 * Sets the data value of the left child of the current node.
 	 * @param data the integer to set the data value to for the left 
 	 * child of the current node 
