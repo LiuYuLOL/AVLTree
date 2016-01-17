@@ -5,6 +5,12 @@
  */
 public class Node {
 
+	//Declare instance variables
+	private int data;
+	private int balanceFactor;
+	private Node leftChild;
+	private Node rightChild;
+
 	/**
 	 * Sets the data value of the left child of the current node.
 	 * @param data the integer to set the data value to for the left 
