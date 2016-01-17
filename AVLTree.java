@@ -5,6 +5,9 @@
  */
 public class AVLTree {
 
+	//Declare instance variables
+	private Node root;
+
 	/**
 	 * Creates a new Node object that contains an integer, data, and 
 	 * inserts it into the AVL tree. 
