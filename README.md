@@ -1,0 +1,12 @@
+# AVLTree
+This is a Java implementation of an AVL tree data stucture that stores nodes that contain integer values. 
+
+The AVL tree is a self-balancing binary search tree. As such, it adheres to the same rules as a normal binary search tree, where nodes in the left subtree are less than the root and nodes in the right subtree are greater than the root. Ideally, this results in a data structure that allows for insert, find, and delete operations to be performed in O(log n) time. However, the structure of the binary search tree is dependent on the order of the inserted data. Suppose a set of data is inserted into the binary search tree in increasing order. The resulting data structure would be a series of singly linked nodes, effectively becoming a singly linked list with the same find, insert, and delete operations performing in O(n) time. 
+
+The advantage of an AVL tree comes from its ability to prevent this event from ever occuring, ensuring that the insert, find, and delete operations are always performed in O(log n) time. To accomplish this, each node in the tree is assigned a balance factor value, ranging between -1 and +1. This value is determined by the following formula: 
+
+    balance factor = height of left subtree - height of right subtree. 
+
+Inserting a node into the tree may cause a previously inserted node to have a balance factor outside of the -1 to +1 range. If this occurs, the tree will restructure the subtree(s) of the unbalanced node, so that the unbalanced node and each node in the restructured subtree(s) has a balance factor between -1 and +1.
+
+The self-balancing process of the AVL tree is dependent on where the last inserted node is located. In the event of an inserted node causing another node to become unbalanced, if the new node is inserted into the left subtree of the left child of the unbalanced node, the self-balancing operating that is performed is a single right rotation (RR) on the unbalanced node. If the new node is inserted into the right subtree of the left child of the unbalanced node, the operation performed is a right-left rotation (RL). If the new node is inserted into the right subtree of the right child of the unbalanced node, the self-balancing operation is a single left rotation (LL). If the new node is inserted into the left subtree of the right child of the unbalanced node, the operation performed is a left-right rotation (LR). 
