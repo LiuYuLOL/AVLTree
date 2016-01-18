@@ -5,7 +5,7 @@ The AVL tree is a self-balancing binary search tree. As such, it adheres to the 
 
 The advantage of an AVL tree comes from its ability to prevent this event from ever occuring, ensuring that the insert, find, and delete operations are always performed in O(log n) time. To accomplish this, each node in the tree is assigned a balance factor value, ranging between -1 and +1. This value is determined by the following formula: 
 
-    balance factor = height of left subtree - height of right subtree. 
+    height of left subtree - height of right subtree = balance factor
 
 Inserting a node into the tree may cause a previously inserted node to have a balance factor outside of the -1 to +1 range. If this occurs, the tree will restructure the subtree(s) of the unbalanced node, so that the unbalanced node and each node in the restructured subtree(s) has a balance factor between -1 and +1.
 
