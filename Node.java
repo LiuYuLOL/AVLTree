@@ -23,7 +23,23 @@ public class Node {
 	}
 
 	/**
-	 * Sets the data value of the left child of the current node.
+	 * Sets the data value of the current node
+	 * @param data - the new data value that the node contains
+	 */
+	public void setData(int data) {
+		this.data = data;
+	}
+
+	/**
+	 * Gets the data value of the current node
+	 * @return the data value of the current node
+	 */
+	public int getData() {
+		return this.data;
+	}
+
+	/**
+	 * Sets the data value of the left child of the current node
 	 * @param data the integer to set the data value to for the left 
 	 * child of the current node 
 	 */
@@ -33,7 +49,7 @@ public class Node {
 	}
 
 	/**
-	 * Returns the left child node of the current node.
+	 * Returns the left child node of the current node
 	 * @return leftChild the left child of the current node
 	 */
 	public Node getLeftChild() {
@@ -41,7 +57,7 @@ public class Node {
 	}
 
 	/**
-	 * Sets the data value of the right child of the current node.
+	 * Sets the data value of the right child of the current node
 	 * @param data the integer to set the data value to for the right 
 	 * child of the current node
 	 */
@@ -51,7 +67,7 @@ public class Node {
 	}
 
 	/**
-	 * Returns the right child node of the current node.
+	 * Returns the right child node of the current node
 	 * @return rightChild the right child of the current node
 	 */
 	public Node getRightChild() {
@@ -59,9 +75,9 @@ public class Node {
 	}
 
 	/**
-	 * Determines the balance factor of the current node. The balance 
-	 * factor is equal to the difference between the height of the 
-	 * left subtree and the right subtree of the current node.
+	 * Determines the balance factor of the current node  
+	 * The balance factor is equal to the difference between the  
+	 * height of the left subtree and the right subtree of the current node.
 	 * @return balanceFactor the balance factor of the current node
 	 */
 	public int getBalanceFactor() {
