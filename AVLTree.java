@@ -12,7 +12,7 @@ public class AVLTree {
 	 * Constructs an empty AVL tree.
 	 */
 	public AVLTree() {
-		root = null;
+		this.root = null;
 	}
 
 	/**
@@ -48,9 +48,9 @@ public class AVLTree {
 		}
 		while (current.getData() != data && current != null) {
 			if (data < current.data) {
-				current = root.getLeftChild();
+				current = current.getLeftChild();
 			} else {
-				current = root.getRightChild();
+				current = current.getRightChild();
 			}
 		}
 		return False;
