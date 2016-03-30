@@ -83,8 +83,7 @@ public class Node {
 	public int getBalanceFactor(Node root, int height) {
 		if (root.getData() == null) {
 			return height;
-		}
-		else {
+		} else {
 			height++;
 			return getBalanceFactor(root.getLeftChild(), height) - getBalanceFator(root.getRightChild(), height);
 		}
