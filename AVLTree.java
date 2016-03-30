@@ -29,8 +29,26 @@ public class AVLTree {
 	 * inserts it into the AVL tree. 
 	 * @param data integer to be stored in the new Node object
 	 */
-	public void insert(int data) {
-
+	public void insert(int data) throws NodeAlreadyExistsException {
+		try {
+			Node newNode = new Node(data);
+			Node current = root;
+			if (current == null) {
+				root = newNode;
+			}
+			while (current != null) {
+				if (data < current.getData()) {
+					current = current.getLeftChild();
+				} else if (data > current.getData()) {
+					current = current.getRightChild();
+				} else {
+					throw new NodeAlreadyExistsException(data);
+				}
+			}
+			current = newNode;
+		} catch (NodeAlreadyExistsException e) {
+			System.out.println(e + "\n");
+		}
 	}
 
 	/**
