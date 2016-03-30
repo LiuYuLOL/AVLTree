@@ -21,8 +21,7 @@ public class AVLTree {
 	 * @param data the integer to be stored in the AVL tree's root node
 	 */
 	public AVLTree(int data) {
-		Node newNode = new Node(data);
-		this.root = newNode;
+		this.root = new Node(data);
 	}
 
 	/**
