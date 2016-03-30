@@ -80,7 +80,13 @@ public class Node {
 	 * height of the left subtree and the right subtree of the current node.
 	 * @return balanceFactor the balance factor of the current node
 	 */
-	public int getBalanceFactor() {
-
+	public int getBalanceFactor(Node root, int height) {
+		if (root.getData() == null) {
+			return height;
+		}
+		else {
+			height++;
+			return getBalanceFactor(root.getLeftChild(), height) - getBalanceFator(root.getRightChild(), height);
+		}
 	}
 }
