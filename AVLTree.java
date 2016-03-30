@@ -44,7 +44,7 @@ public class AVLTree {
 	public boolean find(int data) {
 		Node current = root;
 		if (current.getData() == data) {
-			return True;
+			return true;
 		}
 		while (current.getData() != data && current != null) {
 			if (data < current.data) {
@@ -53,6 +53,6 @@ public class AVLTree {
 				current = current.getRightChild();
 			}
 		}
-		return False;
+		return false;
 	}
 }
