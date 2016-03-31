@@ -35,6 +35,8 @@ public class AVLTree {
 	 * Creates a new Node that contains an integer, data, and 
 	 * inserts it into the AVL tree. 
 	 * @param data - int value to be stored in the new Node object
+	 * @throws NodeAlreadyExistsException - if the tree contains a node 
+	 * that already has an int value equal to data
 	 */
 	public void insert(int data) throws NodeAlreadyExistsException {
 		try {
