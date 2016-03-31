@@ -23,6 +23,13 @@ public class AVLTree {
 	public AVLTree(int data) {
 		this.root = new Node(data);
 	}
+	/**
+	 * Gets the root Node of the AVLTree
+	 * @return root - the root Node of the AVLTree
+	 */
+	public Node getRoot() {
+		return this.root;
+	}
 
 	/**
 	 * Creates a new Node that contains an integer, data, and 
