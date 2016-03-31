@@ -18,7 +18,7 @@ public class AVLTree {
 	/**
 	 * Constructs an AVL tree, setting root to a new Node that contains
 	 * the int value, data
-	 * @param data the integer to be stored in the AVL tree's root node
+	 * @param data - the int value to be stored in the AVLtree's root node
 	 */
 	public AVLTree(int data) {
 		this.root = new Node(data);
@@ -27,7 +27,7 @@ public class AVLTree {
 	/**
 	 * Creates a new Node that contains an integer, data, and 
 	 * inserts it into the AVL tree. 
-	 * @param data integer to be stored in the new Node object
+	 * @param data - int value to be stored in the new Node object
 	 */
 	public void insert(int data) throws NodeAlreadyExistsException {
 		try {
