@@ -1,11 +1,11 @@
 /**
  * Implementation of AVL tree data structure that holds Node ojbects 
- * that stores an integer as its data.
+ * that stores an integer as their data.
  * @author Isaac Mast
  */
 public class AVLTree {
 
-	//Declare instance variables
+	// declare instance variables
 	private Node root;
 
 	/**
@@ -16,8 +16,8 @@ public class AVLTree {
 	}
 
 	/**
-	 * Constructs an AVL tree by creating a new Node object, newNode, 
-	 * and setting it as the tree's root node.
+	 * Constructs an AVL tree, setting root to a new Node that contains
+	 * the int value, data
 	 * @param data the integer to be stored in the AVL tree's root node
 	 */
 	public AVLTree(int data) {
@@ -25,7 +25,7 @@ public class AVLTree {
 	}
 
 	/**
-	 * Creates a new Node object that contains an integer, data, and 
+	 * Creates a new Node that contains an integer, data, and 
 	 * inserts it into the AVL tree. 
 	 * @param data integer to be stored in the new Node object
 	 */
@@ -52,12 +52,11 @@ public class AVLTree {
 	}
 
 	/**
-	 * Finds a Node object in the AVL tree that contains the integer, 
-	 * data.
-	 * @return True if a Node object is found in the AVL tree that 
-	 * contains the integer, data
-	 * @return False if a Node object is not found in the AVL tree 
-	 * that contains the integer, data
+	 * Finds a Node in the AVL tree that contains the integer, data
+	 * @return true if a Node is found in the AVL tree that contains
+	 * the int value, data
+	 * @return false if a Node is not found in the AVL tree that
+	 * contains the int value, data
 	 */
 	public boolean find(int data) {
 		Node current = root;
