@@ -33,7 +33,7 @@ public class AVLTree {
 		try {
 			Node newNode = new Node(data);
 			Node current = root;
-			if (current == null) {
+			if (root == null) {
 				root = newNode;
 			}
 			while (current != null) {
