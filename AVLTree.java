@@ -79,4 +79,49 @@ public class AVLTree {
 		}
 		return false;
 	}
+
+	/**
+	 * Performs a pre-order traversal of the AVLTree and prints out
+	 * the data of each Node
+	 * @param current - the visited Node in the AVLTree
+	 */
+	public void preOrder(Node current) {
+		if (current == null) {
+			System.out.print("null ");
+		} else {
+			System.out.print(current.getData() + " ");
+			preOrder(current.getLeftChild());
+			preOrder(current.getRightChild());
+		}
+	}
+
+	/**
+	 * Performs an in-order traversal of the AVLTree and prints out
+	 * the data of each Node
+	 * @param current - the visited Node in the AVLTree
+	 */
+	public void inOrder(Node current) {
+		if (current == null) {
+			System.out.print("null ");
+		} else {
+			inOrder(current.getLeftChild());
+			System.out.print(current.getData() + " ");
+			inOrder(current.getRightChild());
+		}
+	}
+
+	/**
+	 * Performs a post-order traversal of the AVLTree and prints out
+	 * the data of each Node
+	 * @param current - the visited Node in the AVLTree
+	 */
+	public void postOrder(Node current) {
+		if (current == null) {
+			System.out.print("null ");
+		} else {
+			postOrder(current.getLeftChild());
+			postOrder(current.getRightChild());
+			System.out.print(current.getData() + " ");
+		}
+	}
 }
