@@ -84,7 +84,7 @@ public class AVLTree {
 			return true;
 		}
 		while (current.getData() != data && current != null) {
-			if (data < current.data) {
+			if (data < current.getData()) {
 				current = current.getLeftChild();
 			} else {
 				current = current.getRightChild();
