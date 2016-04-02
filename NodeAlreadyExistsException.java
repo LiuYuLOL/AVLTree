@@ -1,17 +1,12 @@
 public class NodeAlreadyExistsException extends Exception {
 
-	// declare instance variables
-	private int data;
+	public static final String MESSAGE = "A Node already exists that contains the int value: ";
 
 	public NodeAlreadyExistsException() {
 
 	}
 
-	public NodeAlreadyExistsException(int data) {
-		this.data = data;
-	}
-
-	public String toString() {
-		return "A Node containing " + this.data + " already exists";
+	public NodeAlreadyExistsException(String message) {
+		super(message);
 	}
 }
