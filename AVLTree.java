@@ -40,23 +40,34 @@ public class AVLTree {
 	 */
 	public void insert(int data) throws NodeAlreadyExistsException {
 		try {
-			Node newNode = new Node(data);
 			Node current = root;
+			Node parent = current;
 			if (root == null) {
-				root = newNode;
-			}
-			while (current != null) {
-				if (data < current.getData()) {
-					current = current.getLeftChild();
-				} else if (data > current.getData()) {
-					current = current.getRightChild();
+				root = new Node(data);
+				System.out.println(AVLTreeTest.SUCCESS);
+			} else {
+				while (current != null && data != current.getData()) {
+					if (data < current.getData()) {
+						parent = current;
+						current = current.getLeftChild();
+					} else {
+						parent = current;
+						current = current.getRightChild();
+					}
+				}
+				if (current != null && data == current.getData()) {
+					System.out.println(AVLTreeTest.FAILED);
+					throw new NodeAlreadyExistsException(NodeAlreadyExistsException.MESSAGE + data);
+				} else if (data < parent.getData() && parent.getLeftChild() == current) {
+					parent.setLeftChild(new Node(data));
+					System.out.println(AVLTreeTest.SUCCESS);
 				} else {
-					throw new NodeAlreadyExistsException(data);
+					parent.setRightChild(new Node(data));
+					System.out.println(AVLTreeTest.SUCCESS);
 				}
 			}
-			current = newNode;
 		} catch (NodeAlreadyExistsException e) {
-			System.out.println(e + "\n");
+			System.out.println(e.toString());
 		}
 	}
 
