@@ -11,15 +11,22 @@ public class Node {
 	private Node leftChild;
 	private Node rightChild;
 
+	public Node() {
+		this.data = 0;
+		this.balanceFactor = 0;
+		this.leftChild = null;
+		this.rightChild = null;
+	}
+
 	/**
 	 * Constructs a leaf node that stores an integer, data
 	 * @param data the integer to set the data value to for the new node
 	 */
 	public Node(int data) {
 		this.data = data;
-		balancefactor = 0;
-		leftChild = null;
-		rightChild = null;
+		this.balanceFactor = 0;
+		this.leftChild = null;
+		this.rightChild = null;
 	}
 
 	/**
@@ -78,14 +85,16 @@ public class Node {
 	 * Determines the balance factor of the current node  
 	 * The balance factor is equal to the difference between the  
 	 * height of the left subtree and the right subtree of the current node.
+	 * @param node - the node to determine the balance factor of
+	 * @param height - the height of the node's subtrees 
 	 * @return balanceFactor the balance factor of the current node
 	 */
-	public int getBalanceFactor(Node root, int height) {
-		if (root.getData() == null) {
+	public int getBalanceFactor(Node node, int height) {
+		if (node == null) {
 			return height;
 		} else {
 			height++;
-			return getBalanceFactor(root.getLeftChild(), height) - getBalanceFator(root.getRightChild(), height);
+			return getBalanceFactor(node.getLeftChild(), height) - getBalanceFactor(node.getRightChild(), height);
 		}
 	}
 }
