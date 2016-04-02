@@ -50,9 +50,8 @@ public class Node {
 	 * @param data the integer to set the data value to for the left 
 	 * child of the current node 
 	 */
-	public void setLeftChild(int data) {
-		Node newNode = new Node(data);
-		this.leftChild = newNode;
+	public void setLeftChild(Node leftChild) {
+		this.leftChild = leftChild; 
 	}
 
 	/**
@@ -68,9 +67,8 @@ public class Node {
 	 * @param data the integer to set the data value to for the right 
 	 * child of the current node
 	 */
-	public void setRightChild(int data) {
-		Node newNode = new Node(data);
-		this.rightChild = newNode;
+	public void setRightChild(Node rightChild) {
+		this.rightChild = rightChild;
 	}
 
 	/**
