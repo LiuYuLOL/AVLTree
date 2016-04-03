@@ -6,6 +6,9 @@ public class AVLTreeTest {
 	public static final String TESTING_INSERT = "Testing insert()";
 	public static final String INSERTING = "Inserting ";
 
+	public static final String TESTING_FIND = "Testing find()";
+	public static final String FINDING = "Finding ";
+
 	public static final String SUCCESS = "SUCCESS!";
 	public static final String FAILED = "FAILED!";
 
