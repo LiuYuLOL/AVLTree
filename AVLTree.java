@@ -80,17 +80,17 @@ public class AVLTree {
 	 */
 	public boolean find(int data) {
 		Node current = root;
-		if (current.getData() == data) {
-			return true;
-		}
-		while (current.getData() != data && current != null) {
+		while (current != null && data != current.getData()) {
 			if (data < current.getData()) {
 				current = current.getLeftChild();
 			} else {
 				current = current.getRightChild();
 			}
 		}
-		return false;
+		if (current == null) {
+			return false;
+		}
+		return true;
 	}
 
 	/**
