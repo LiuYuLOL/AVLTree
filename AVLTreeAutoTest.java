@@ -10,14 +10,17 @@ public class AVLTreeAutoTest extends AVLTreeTest {
 
 		int[] values = {10, 7, 13, 2, 5, 16, 3, 11, 6, 8, 12};
 
+		// test insert()
 		try {
-			print(test.TESTING_INSERT, true);
+			print(TESTING_INSERT, true);
 			for (int i: values) {
-				print(test.INSERTING + i + test.ELLIPSIS, false);
+				print(INSERTING + i + ELLIPSIS, false);
 				tree.insert(i);
 			}
 		} catch (Exception e) {
-			test.print(e.toString(), true);
+			print(e.toString(), true);
+		}
+
 		}
 	}
 }
